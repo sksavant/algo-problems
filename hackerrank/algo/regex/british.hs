@@ -5,7 +5,7 @@ numberof a d = sum $ map(\x-> (findall a x)+(findall (zeify a) x)) d
 
 findall a  =length . filter (==a) . concatMap inits . tails
 
-zeify a = (init $ init a)  ++ "ze"
+zeify a = (init $ init a)  ++ "se"
 
 main = do
     n <- readLn :: IO Int
