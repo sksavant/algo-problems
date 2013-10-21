@@ -22,7 +22,11 @@ while True:
         except IndexError:
             pass
         try:
-            print multistart.findall(x)[0]
-            multicomment = True
+            s= multistart.findall(x)[0]
+            try:
+                print multistop.findall(s)[0]
+            except IndexError:
+                print s
+                multicomment = True
         except IndexError:
             pass
