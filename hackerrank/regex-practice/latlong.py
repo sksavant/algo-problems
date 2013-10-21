@@ -2,10 +2,10 @@
 import re
 n = int(raw_input())
 latlongregex = re.compile('\([\-\+]*\d+[.\d]*, [+-]*\d+.*\d*\)')
-lat1regex = re.compile('(?<=\()[\+\-]*[1-9]\d+.\d+(?=,)')
-lat2regex = re.compile('(?<=\()[\+\-]*[1-9]\d+(?=,)')
-lng1regex = re.compile('(?<=, )[\+\-]*[1-9]\d+.\d+(?=\))')
-lng2regex = re.compile('(?<=, )[\+\-]*[1-9]\d+(?=\))')
+lat1regex = re.compile('(?<=\()[\+\-]*[1-9]\d*.\d+(?=,)')
+lat2regex = re.compile('(?<=\()[\+\-]*[1-9]\d*(?=,)')
+lng1regex = re.compile('(?<=, )[\+\-]*[1-9]\d*.\d+(?=\))')
+lng2regex = re.compile('(?<=, )[\+\-]*[1-9]\d*(?=\))')
 for i in range(n):
     x = raw_input()
     if not latlongregex.match(x):
@@ -18,6 +18,7 @@ for i in range(n):
         print "Invalid"
         #print "long"
         continue
+    #print lat1regex.findall(x), lat2regex.findall(x)
     if lat1regex.findall(x)==[] and lat2regex.findall(x)==[]:
         print "Invalid"
         #print "lat"
