@@ -1,5 +1,8 @@
 
-minunfair k x = minimum $ map (\a -> fairness a) $ choose x k
+minunfair k x = f (choose x k) (maximum x)
+
+f (x:xs) a = min (fairness x) $ f xs a
+f [] a = a
 
 fairness a = (maximum a) - (minimum a)
 
