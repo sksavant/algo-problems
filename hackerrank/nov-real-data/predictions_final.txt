@@ -13,3 +13,5 @@ Predicted 3618 cases exactly!
 Out of a total of 11249 cases,
 Predicted 6969 cases within tolerable error
 Predicted 3408 cases exactly!
+
+=> 27.173107 score. Not good enough!
