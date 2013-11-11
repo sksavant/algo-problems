@@ -1,0 +1,15 @@
+Out of a total of 16388 cases,
+Predicted 10973 cases within tolerable error
+Predicted 5411 cases exactly!
+Out of a total of 27258 cases,
+Predicted 17044 cases within tolerable error
+Predicted 8291 cases exactly!
+Out of a total of 922 cases,
+Predicted 686 cases within tolerable error
+Predicted 412 cases exactly!
+Out of a total of 12990 cases,
+Predicted 8080 cases within tolerable error
+Predicted 3618 cases exactly!
+Out of a total of 11249 cases,
+Predicted 6969 cases within tolerable error
+Predicted 3408 cases exactly!
